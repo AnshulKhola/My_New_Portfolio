@@ -4,7 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import resumePDF from "../../assets/Sandip_Sarkar.pdf";
+import resumePDF from "../../assets/Resume3.pdf";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
