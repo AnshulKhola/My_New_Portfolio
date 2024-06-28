@@ -15,6 +15,7 @@ import {
 } from "react-icons/si";
 import { GrCode } from "react-icons/gr";
 import { SiNextdotjs } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 
@@ -53,7 +54,7 @@ const Skills = ({ darkMode }) => {
                   name={"Javascript"}
                   value={80}
                 />
-                <ProgressBar logo={<FaReact />} name={"React.js"} value={85} />
+                <ProgressBar logo={<SiTypescript />} name={"TypeScript"} value={85} />
                 <ProgressBar
                   logo={<TbBrandNextjs />}
                   name={"Next.js"}
@@ -66,10 +67,10 @@ const Skills = ({ darkMode }) => {
           <div className="right relative flex-1 flex flex-wrap p-5  gap-10 items-center justify-center sm:w-full">
             <div className="first2 flex flex-col gap-10 ">
               <SkillBox
-                logo={<div className=" p-2 bg-white rounded-full"><SiTypescript className="text-black p-[2px]" /></div>}
+                logo={<div className=" p-2 bg-white rounded-full"><FaReact className="text-black p-[2px]" /></div>}
                 black={"white"}
                 white={"black"}
-                skill={"Typescript"}
+                skill={"React"}
               />
               <SkillBox
                 logo={<SiMongodb />}
@@ -86,69 +87,17 @@ const Skills = ({ darkMode }) => {
                 skill={"Express.js"}
               />
               <SkillBox
-                className="overflow-hidden"
-                logo={<SiMysql className="text-white p-1" />}
-                black={"white"}
-                white={"black"}
-                skill={"MySQL"}
-              />
-              {/* <SkillBox
                 className=""
                 logo={
-                  <SiNextdotjs className=" text-white bg-black rounded-full h-fit border-white overflow-hidden" />
+                  <FaNode className=" text-white bg-black rounded-full h-fit border-white overflow-hidden" />
                 }
-                black={"black"}
-                white={"white"}
-                skill={"Next Js"}
-              /> */}
+                black={"white"}
+                white={"black"}
+                skill={"Node.js"}
+              />
             </div>
           </div>
         </div>
-
-        {/* icons */}
-        {/* <div
-          data-aos="fade-up"
-          data-aos-duration="1200"
-          className=" container m-auto flex items-center justify-center mt-8 gap-8 md:gap-5"
-        >
-          <img
-            className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
-            src="https://img.icons8.com/ios-filled/50/null/c-plus-plus-logo.png"
-          />
-
-          <img
-            className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
-            src="https://img.icons8.com/color/48/null/python--v1.png"
-          />
-          <img
-            className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
-            src="https://img.icons8.com/ios/50/null/react-native--v1.png"
-          />
-
-          <img
-            className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
-            src="https://img.icons8.com/color/48/null/sass.png"
-            />
-          <img
-            className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
-            src="https://img.icons8.com/ios-filled/50/null/git.png"
-            />
-            <img
-              className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
-              src="https://img.icons8.com/windows/50/null/sass--v1.png"
-            />
-          <img
-            className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
-            src="https://img.icons8.com/color/48/null/c-plus-plus-logo.png"
-          />
-          <img
-            className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
-            src="https://img.icons8.com/ios-filled/50/null/python.png"
-          />
-          <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/null/javascript--v1.png"/>
-          <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/null/nodejs.png"/>
-          <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/null/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png"/>
-        </div> */}
       </div>
     </div>
   );

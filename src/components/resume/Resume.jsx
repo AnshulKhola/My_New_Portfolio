@@ -138,20 +138,20 @@ const Resume = () => {
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   B.Tech, Engineering Physics
                 </h1>
-                <Link to={"https://www.nita.ac.in/"}>
+                <Link to={"https://nitkkr.ac.in/"}>
                   <span className=" text-[1rem] font-semibold text-gray-500 sm:text-base flex items-center gap-1">
-                    <RiLink /> NIT, Agartala
+                    <RiLink /> National Institute of Technology, Kurukshetra
                   </span>
                 </Link>
                 <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
-                  Year 2020 - Year 2024
+                  Year 2021 - Year 2025
                 </span>
                 <p className=" text-[.9rem] text-justify text-gray-500">
                   As an undergraduate student, I have a good understanding of
                   web development technologies such as HTML, CSS, TailwindCSS,
                   JavaScript, TypeScript, React.js and Next.js. Additionally,
                   I'm proficient in backend technologies such as Node.js,
-                  Express.js, MongoDB and MySQL. I also have skills in C++ and
+                  Express.js, and MongoDB. I also have skills in C++ and
                   problem-solving using Data structures and Algorithms.
                 </p>
               </div>
