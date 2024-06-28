@@ -5,26 +5,37 @@ import { Link } from "react-router-dom";
 const Resume = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const internships = [
+  const educations = [
     {
-      title: "Fullstack Developer Intern",
-      company: "Hashtek Solutions",
-      link: "https://www.hashteksolutions.com/",
-      date: "March 2024 - Present",
-      description: `In my current internship at Hashtek Solutions, I'm working as
-                    a Fullstack Developer focusing on the frontend development
-                    using React.js and SCSS, where I work on creating interactive
-                    and user-friendly interfaces. Additionally, I'm responsible
-                    for building the backend APIs using Node.js, Express.js, and
-                    PostgreSQL, enabling data storage and retrieval for the
-                    application.`,
+      title: "Btech, Electronics and Communication",
+      company: "National Institute of Technology, Kurukshetra",
+      link: "https://nitkkr.ac.in/",
+      date: "Dec 2021 - Jun 2025",
+      // description: `In my current internship at Hashtek Solutions, I'm working as
+      //               a Fullstack Developer focusing on the frontend development
+      //               using React.js and SCSS, where I work on creating interactive
+      //               and user-friendly interfaces. Additionally, I'm responsible
+      //               for building the backend APIs using Node.js, Express.js, and
+      //               PostgreSQL, enabling data storage and retrieval for the
+      //               application.`,
+      description: `As an undergraduate student, I have a good understanding of
+                  web development technologies such as HTML, CSS, TailwindCSS,
+                  JavaScript, TypeScript, React.js and Next.js. Additionally,
+                  I'm proficient in backend technologies such as Node.js,
+                  Express.js, and MongoDB. I also have skills in C++ and
+                  problem-solving using Data structures and Algorithms.`,
     },
     {
-      title: "Fullstack Developer Intern",
-      company: "Drafteq Engineering",
-      link: "https://www.drafteq.com/",
-      date: "August 2023 - December 2023",
-      description: `During my internship at Drafteq Engineering, I worked as a Full Stack Developer, focusing on frontend development using React.js. I created interactive and user-friendly interfaces. Additionally, I was responsible for building the backend API using Node.js, Express.js, and MongoDB, enabling data storage and retrieval for the application.`,
+      title: "10th and 12th",
+      company: "RPS Public School, Rewari", 
+      link: "https://www.rpsrewari.edu.in/",
+      date: "March 2018 - March 2020",
+      description: `During my internship at Drafteq Engineering, I worked
+                   as a Full Stack Developer, focusing on frontend development
+                   using React.js. I created interactive and user-friendly interfaces.
+                  Additionally, I was responsible for building the backend API using 
+                  Node.js, Express.js, and MongoDB, enabling data storage and
+                  retrieval for the application.`,
     },
   ];
 
@@ -53,7 +64,7 @@ const Resume = () => {
             className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2"
           >
             <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text-black">
-              Internship
+              Educations
             </legend>
             <div className=" relative">
               {/* design */}
@@ -72,29 +83,29 @@ const Resume = () => {
                         transform: `translateX(-${currentSlide * 100}%)`,
                       }}
                     >
-                      {internships.map((internship, index) => (
+                      {educations.map((item, index) => (
                         <div
                           className="carousel-item w-full flex-shrink-0"
                           key={index}
                         >
                           <div className="flex flex-col gap-1 sm:gap-1 border-2 hover:border-yellow-400 hover:shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg bg-white">
                             <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                              {internship.title}
+                              {item.title}
                             </h1>
                             <Link
-                              to={internship.link}
+                              to={item.link}
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               <span className="text-[1rem] font-semibold text-gray-500 sm:text-base flex items-center gap-1">
-                                <RiLink /> {internship.company}
+                                <RiLink /> {item.company}
                               </span>
                             </Link>
                             <span className="text-[.9rem] font-semibold text-yellow-500 sm:text-base">
-                              {internship.date}
+                              {item.date}
                             </span>
                             <p className="text-[.9rem] text-justify break-words text-gray-500">
-                              {internship.description}
+                              {item.description}
                             </p>
                           </div>
                         </div>
@@ -104,7 +115,7 @@ const Resume = () => {
                 </div>
                 {/* Dots */}
                 <div className="dots mt-4 flex justify-center gap-2">
-                  {internships.map((_, index) => (
+                  {educations.map((_, index) => (
                     <div
                       key={index}
                       onClick={() => handleDotClick(index)}
@@ -124,7 +135,7 @@ const Resume = () => {
             className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2"
           >
             <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text-black">
-              Education
+              Internship
             </legend>
             <div className=" relative">
               {/* design */}
@@ -136,23 +147,22 @@ const Resume = () => {
               {/* design */}
               <div className=" flex flex-col gap-1 border-2 hover:border-yellow-400 hover:shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg bg-white">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                  B.Tech, Engineering Physics
+                  Full Stack Developer Intern
                 </h1>
-                <Link to={"https://nitkkr.ac.in/"}>
+                <Link to={""}>
                   <span className=" text-[1rem] font-semibold text-gray-500 sm:text-base flex items-center gap-1">
-                    <RiLink /> National Institute of Technology, Kurukshetra
+                    <RiLink /> Bharti Airtel Ltd., Manesar
                   </span>
                 </Link>
                 <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
-                  Year 2021 - Year 2025
+                  Dec 2023 - May 2024
                 </span>
                 <p className=" text-[.9rem] text-justify text-gray-500">
-                  As an undergraduate student, I have a good understanding of
-                  web development technologies such as HTML, CSS, TailwindCSS,
-                  JavaScript, TypeScript, React.js and Next.js. Additionally,
-                  I'm proficient in backend technologies such as Node.js,
-                  Express.js, and MongoDB. I also have skills in C++ and
-                  problem-solving using Data structures and Algorithms.
+                  During my internship at Bharti Airtel Ltd, I worked
+                   as a Full Stack Developer, focusing on frontend development
+                   using ReactJs. I created interactive and user-friendly interfaces.
+                  Additionally, I was working on the backend using DjangoRestFramework
+                  and SQL, enabling data storage and retrieval for the application.
                 </p>
               </div>
             </div>
