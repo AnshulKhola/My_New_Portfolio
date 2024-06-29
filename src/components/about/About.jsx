@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { RiLink } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-const Resume = () => {
+const About = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const educations = [
@@ -10,32 +10,20 @@ const Resume = () => {
       title: "Btech, Electronics and Communication",
       company: "National Institute of Technology, Kurukshetra",
       link: "https://nitkkr.ac.in/",
-      date: "Dec 2021 - Jun 2025",
-      // description: `In my current internship at Hashtek Solutions, I'm working as
-      //               a Fullstack Developer focusing on the frontend development
-      //               using React.js and SCSS, where I work on creating interactive
-      //               and user-friendly interfaces. Additionally, I'm responsible
-      //               for building the backend APIs using Node.js, Express.js, and
-      //               PostgreSQL, enabling data storage and retrieval for the
-      //               application.`,
+      date: "Dec 2021 - Present",
       description: `As an undergraduate student, I have a good understanding of
                   web development technologies such as HTML, CSS, TailwindCSS,
                   JavaScript, TypeScript, React.js and Next.js. Additionally,
                   I'm proficient in backend technologies such as Node.js,
-                  Express.js, and MongoDB. I also have skills in C++ and
+                  Express.js, MongoDB and MySQL. I also have skills in C++ and
                   problem-solving using Data structures and Algorithms.`,
     },
     {
-      title: "10th and 12th",
-      company: "RPS Public School, Rewari", 
-      link: "https://www.rpsrewari.edu.in/",
-      date: "March 2018 - March 2020",
-      description: `During my internship at Drafteq Engineering, I worked
-                   as a Full Stack Developer, focusing on frontend development
-                   using React.js. I created interactive and user-friendly interfaces.
-                  Additionally, I was responsible for building the backend API using 
-                  Node.js, Express.js, and MongoDB, enabling data storage and
-                  retrieval for the application.`,
+      title: "10th & 12th",
+      company: "RPS Public School, Rewari",
+      link: "https://www.drafteq.com/",
+      date: "Year 2017-2018 & Year 2019-2020",
+      description: `I have been a dedicated student at RPS Rewari since 2017, where I have received exceptional support from my teachers in my IIT-JEE preparation. Alongside my academic pursuits, I actively participated in various sports, including badminton, cricket, and basketball. Additionally, I have successfully cleared the UPSC NDA examination three times and have attended the SSB interview five times, enriching my experience and fostering a collaborative atmosphere with my peers.`,
     },
   ];
 
@@ -47,7 +35,7 @@ const Resume = () => {
       {/* heading */}
       <div data-aos="fade-up" className="relative mb-5">
         <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
-          Resume
+          About Me
         </h3>
         <span className="h-[1.1px] right-0 absolute w-[92%] bg-gray-300 block"></span>
       </div>
@@ -149,7 +137,7 @@ const Resume = () => {
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   Full Stack Developer Intern
                 </h1>
-                <Link to={""}>
+                <Link to={"https://www.nita.ac.in/"}>
                   <span className=" text-[1rem] font-semibold text-gray-500 sm:text-base flex items-center gap-1">
                     <RiLink /> Bharti Airtel Ltd., Manesar
                   </span>
@@ -157,12 +145,8 @@ const Resume = () => {
                 <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
                   Dec 2023 - May 2024
                 </span>
-                <p className=" text-[.9rem] text-justify text-gray-500">
-                  During my internship at Bharti Airtel Ltd, I worked
-                   as a Full Stack Developer, focusing on frontend development
-                   using ReactJs. I created interactive and user-friendly interfaces.
-                  Additionally, I was working on the backend using DjangoRestFramework
-                  and SQL, enabling data storage and retrieval for the application.
+                <p className=" text-[.9rem] text-justify text-gray-500">      
+                 During my internship at Bharti Airtel Ltd, I am working as a Fullstack Developer with a focus on frontend development using React.js. My role involves creating interactive and user-friendly interfaces. Additionally, I am responsible for backend development using Django Rest Framework and SQL, ensuring efficient data storage and retrieval for the application.
                 </p>
               </div>
             </div>
@@ -173,4 +157,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default About;

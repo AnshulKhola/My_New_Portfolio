@@ -1,11 +1,13 @@
 import React from "react";
-import { AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
+import { AiFillTwitterCircle, AiFillGithub,AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import resumePDF from "../../assets/Resume3.pdf";
-import { BsArrowUpRightCircleFill } from "react-icons/bs";
+import {SiLeetcode} from "react-icons/si";
+import {SiGeeksforgeeks} from "react-icons/si";
+import { SiCodechef } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
@@ -73,6 +75,21 @@ const Hero = () => {
               data-aos-duration="1500"
               className=" flex gap-5"
             >
+
+              <li>
+                <a href="https://twitter.com/AnshulKhola18">
+                  {" "}
+                  <AiFillTwitterCircle className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/anshulkhola18/" target="_blank" rel="noopener noreferrer">
+                  {" "}
+                  <AiFillInstagram className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
+                </a>
+              </li>
+
               <li>
                 <a href="https://github.com/AnshulKhola">
                   {" "}
@@ -86,19 +103,29 @@ const Hero = () => {
                   <FaLinkedinIn className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 " />{" "}
                 </a>
               </li>
+
+
               <li>
-                <a href="https://devalphaspace.com/">
+                <a href="https://leetcode.com/AnshulKhola/" target="_blank" rel="noopener noreferrer">
                   {" "}
-                  <BsArrowUpRightCircleFill className=" h-[1.7rem] w-[1.7rem] text-[1rem] hover:scale-125  " />{" "}
+                  <SiLeetcode className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
               </li>
 
               <li>
-                <a href="https://twitter.com/AnshulKhola18">
+                <a href="https://auth.geeksforgeeks.org/user/golukh5ec1" target="_blank" rel="noopener noreferrer">
                   {" "}
-                  <AiFillTwitterCircle className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
+                  <SiGeeksforgeeks className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
               </li>
+
+               <li>
+                <a href="https://www.codechef.com/users/anshulkhola18" target="_blank" rel="noopener noreferrer">
+                  {" "}
+                  <SiCodechef className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
+                </a>
+              </li>
+
             </ul>
           </div>
         </div>
