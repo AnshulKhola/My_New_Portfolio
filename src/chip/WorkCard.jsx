@@ -5,6 +5,13 @@ import { RxExternalLink } from "react-icons/rx";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { Rocket } from "lucide-react";
+import Tilt from "./Tilt";
+
+const options = {
+  scale: 1,
+  speed: 1000,
+  max: 30
+};
 
 const WorkCard = () => {
   const reversedData = [...data].filter((item, id) => id !== 1).reverse();
@@ -13,6 +20,7 @@ const WorkCard = () => {
     <>
       {reversedData.map((data) => {
         return (
+          <Tilt options={options}>
           <div
             data-aos="zoom-in"
             key={data.id}
@@ -63,6 +71,7 @@ const WorkCard = () => {
               {data.title}
             </p>
           </div>
+          </Tilt>
         );
       })}
     </>
